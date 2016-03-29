@@ -1,20 +1,11 @@
 {
   "name": "mimosa-s3-deployer",
   "version": "0.0.5",
-  "homepage": "https://github.com/Costent/mimosa-s3-deployer",
-  "author": {
-    "name": "William Riancho"
-  },
+  "homepage": "https://github.com/dbashford/mimosa-s3-deployer",
   "description": "Deploy your static files to AWS S3.",
-  "contributors": [
-    {
-      "name": "William Riancho",
-      "email": "wr.wllm@gmail.com"
-    }
-  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Costent/mimosa-s3-deployer.git"
+    "url": "git+https://github.com/dbashford/mimosa-s3-deployer.git"
   },
   "keywords": [
     "mimosa",
@@ -33,32 +24,5 @@
   "license": "MIT",
   "engines": {
     "node": ">=0.10"
-  },
-  "gitHead": "6f4850f10b9073f9fde69e3d86192d7fc2d5083f",
-  "bugs": {
-    "url": "https://github.com/Costent/mimosa-s3-deployer/issues"
-  },
-  "_id": "mimosa-s3-deployer@0.0.5",
-  "scripts": {},
-  "_shasum": "74d447621b1671adb451d45a0bcfa971270ebc22",
-  "_from": "mimosa-s3-deployer@*",
-  "_npmVersion": "2.7.1",
-  "_nodeVersion": "0.12.0",
-  "_npmUser": {
-    "name": "costent",
-    "email": "wr.wllm@gmail.com"
-  },
-  "maintainers": [
-    {
-      "name": "costent",
-      "email": "wr.wllm@gmail.com"
-    }
-  ],
-  "dist": {
-    "shasum": "74d447621b1671adb451d45a0bcfa971270ebc22",
-    "tarball": "http://registry.npmjs.org/mimosa-s3-deployer/-/mimosa-s3-deployer-0.0.5.tgz"
-  },
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/mimosa-s3-deployer/-/mimosa-s3-deployer-0.0.5.tgz",
-  "readme": "ERROR: No README data found!"
+  }
 }
