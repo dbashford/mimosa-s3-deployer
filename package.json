@@ -1,6 +1,6 @@
 {
   "name": "mimosa-s3-deployer",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "homepage": "https://github.com/dbashford/mimosa-s3-deployer",
   "description": "Deploy your static files to AWS S3.",
   "repository": {

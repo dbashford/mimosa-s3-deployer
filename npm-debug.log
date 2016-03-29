@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/dbashford/.nvm/versions/node/v5.4.1/bin/node',
+1 verbose cli   '/Users/dbashford/.nvm/versions/node/v5.4.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.5.3
+3 info using node@v5.4.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/dbashford/mygithub/rivium-api-blueprint/node_modules/mimosa-s3-deployer',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/dbashford/.npm/mimosa-s3-deployer/0.0.5/package.tgz not in flight; packing
+9 info lifecycle mimosa-s3-deployer@0.0.5~prepublish: mimosa-s3-deployer@0.0.5
+10 silly lifecycle mimosa-s3-deployer@0.0.5~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/dbashford/.npm/mimosa-s3-deployer/0.0.5/package.tgz',
+11 verbose tar pack   '/Users/dbashford/mygithub/rivium-api-blueprint/node_modules/mimosa-s3-deployer' ]
+12 verbose tarball /Users/dbashford/.npm/mimosa-s3-deployer/0.0.5/package.tgz
+13 verbose folder /Users/dbashford/mygithub/rivium-api-blueprint/node_modules/mimosa-s3-deployer
+14 verbose addLocalTarball adding from inside cache /Users/dbashford/.npm/mimosa-s3-deployer/0.0.5/package.tgz
+15 silly cache afterAdd mimosa-s3-deployer@0.0.5
+16 verbose afterAdd /Users/dbashford/.npm/mimosa-s3-deployer/0.0.5/package/package.json not in flight; writing
+17 verbose afterAdd /Users/dbashford/.npm/mimosa-s3-deployer/0.0.5/package/package.json written
+18 silly publish { name: 'mimosa-s3-deployer',
+18 silly publish   version: '0.0.5',
+18 silly publish   homepage: 'https://github.com/dbashford/mimosa-s3-deployer',
+18 silly publish   description: 'Deploy your static files to AWS S3.',
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/dbashford/mimosa-s3-deployer.git' },
+18 silly publish   keywords: [ 'mimosa', 'mmodule', 'aws', 's3', 'deploy' ],
+18 silly publish   dependencies:
+18 silly publish    { logmimosa: '1.0.4',
+18 silly publish      glob: '5.0.3',
+18 silly publish      mime: '1.3.4',
+18 silly publish      'aws-sdk': '2.1.17',
+18 silly publish      async: '0.9.0' },
+18 silly publish   license: 'MIT',
+18 silly publish   engines: { node: '>=0.10' },
+18 silly publish   readme: 'mimosa-s3-deployer\n===========\n\n## Overview\n\nDeploy your static files to AWS S3.\nFor more information regarding Mimosa, see http://mimosa.io/\n\n## Install\n\n```\nmimosa mod:install mimosa-s3-deployer\n```\n\n## Usage\n\nRun `mimosa deploy` to deploy your files.\n\n## Functionality\n\n\n## Default Config\n\n```coffee\ns3Deployer:                    # Configuration for s3-deployer using the --package flag.\n  accessKeyId: \'\'              # S3 access key\n  secretAccessKey: \'\'          # S3 secret access key.\n  bucket:                      # Targeted bucket informations.\n    name: \'\'                   # Bucket name.\n    region: \'\'                 # Bucket region.\n  files: \'**/*\'                # glob pattern to match the files to send.\n                               # See https://npmjs.org/package/glob for more information\n  workingDirectory: \'public\'   # Parent directory for the compiled files.\n```\n\n## Example Config\n\n```coffee\ns3Deployer:\n  accessKeyId: \'123456\'\n  secretAccessKey: \'abcdef\'\n  bucket:\n    name: \'myBucket\'\n    region: \'us-east-1\'\n  files: \'{\' + [\n    \'images/**/*\',\n    \'stylesheets/style.css\',\n    \'javascripts/vendor/ember.min.js\',\n    \'javascripts/vendor/handlebars.runtime.js\',\n    \'javascripts/main-built.js\'\n  ].join(\',\') + \'}\'\n\n```\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '7e8723e487bca93058ca42a668dafb287f171c05',
+18 silly publish   bugs: { url: 'https://github.com/dbashford/mimosa-s3-deployer/issues' },
+18 silly publish   _id: 'mimosa-s3-deployer@0.0.5',
+18 silly publish   scripts: {},
+18 silly publish   _shasum: '5237309deb3dfa38eb1f958d077a3714ec2f79dc',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name mimosa-s3-deployer
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/mimosa-s3-deployer
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/dbashford/.npm/mimosa-s3-deployer/0.0.5/package.tgz
+26 verbose request uri https://registry.npmjs.org/mimosa-s3-deployer
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 3:52:59 PM
+29 verbose request id cfadda8c52748745
+30 http request PUT https://registry.npmjs.org/mimosa-s3-deployer
+31 http 403 https://registry.npmjs.org/mimosa-s3-deployer
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   'content-length': '128',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Tue, 29 Mar 2016 22:53:00 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-lax1431-LAX',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1459291979.936404,VS0,VE319' }
+33 verbose request invalidating /Users/dbashford/.npm/registry.npmjs.org/mimosa-s3-deployer on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 0.0.5. Try bumping the version to 1.0.0" : mimosa-s3-deployer
+35 verbose stack     at makeError (/Users/dbashford/.nvm/versions/node/v5.4.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+35 verbose stack     at CachingRegistryClient.<anonymous> (/Users/dbashford/.nvm/versions/node/v5.4.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+35 verbose stack     at Request._callback (/Users/dbashford/.nvm/versions/node/v5.4.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+35 verbose stack     at Request.self.callback (/Users/dbashford/.nvm/versions/node/v5.4.1/lib/node_modules/npm/node_modules/request/request.js:198:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (/Users/dbashford/.nvm/versions/node/v5.4.1/lib/node_modules/npm/node_modules/request/request.js:1035:10)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (/Users/dbashford/.nvm/versions/node/v5.4.1/lib/node_modules/npm/node_modules/request/request.js:962:12)
+36 verbose statusCode 403
+37 verbose pkgid mimosa-s3-deployer
+38 verbose cwd /Users/dbashford/mygithub/rivium-api-blueprint/node_modules/mimosa-s3-deployer
+39 error Darwin 14.5.0
+40 error argv "/Users/dbashford/.nvm/versions/node/v5.4.1/bin/node" "/Users/dbashford/.nvm/versions/node/v5.4.1/bin/npm" "publish"
+41 error node v5.4.1
+42 error npm  v3.5.3
+43 error code E403
+44 error "You cannot publish over the previously published version 0.0.5. Try bumping the version to 1.0.0" : mimosa-s3-deployer
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
